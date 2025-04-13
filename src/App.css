@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@360;400;600&display=swap");
+
 .q1 img{
   width: 400px;
   height: 400px;
@@ -8,12 +10,16 @@
   box-sizing: border-box;
 }
 .main{
+  gap: 20px;
+  padding: 20px;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-image: linear-gradient(to right, white, skyblue);
+  overflow: scroll;
+  color: black;
 }
 .q1imgs{
   display: flex;
@@ -23,15 +29,18 @@
   justify-content: center;
 }
 .q1{
+  padding: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  color: black;
 }
 .q2{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  color: black;
 }
 .q2 h2{
   text-align: center;
@@ -55,4 +64,154 @@
   height: 600px;
   background: transparent;
   backdrop-filter: blur(25px);
+}
+
+
+/*profile image*/
+.topside {
+    width: 100%;
+    height: 130px;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-image: url("public/images/backgroundbubbles.jpg");
+    background-position: center;
+}
+
+.topside img {
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    border: 2px solid black;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #8a2be2, #888888, #888888, #88bc64);
+    overflow: scroll;
+  }
+/*User info*/
+.userInfo {
+    margin-top: 70px;
+    width: 100%;
+    text-align: center;
+    background-color: none;
+    background: none;
+    color: black;
+}
+
+.userInfo h1 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(29, 27, 27);
+    font-weight: 600;
+    height: 50px;
+}
+
+.userInfo span {
+    background: none;
+    padding: 10px;
+}
+
+.userInfo .contactDetails {
+    margin-left: 60px;
+    display: flex;
+}
+.userInfo .contactDetails {
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  gap: 250px;
+  color: rgb(18, 6, 6);
+  background: transparent;
+}
+
+.userInfo .about {
+  margin-top: 20px;
+  color: rgb(15, 13, 13);
+}
+
+.userInfo .about .quote {
+  font-size: 1.3em;
+  font-style: italic;
+  z-index: 1;
+  text-shadow:
+      1px 1px 2px rgba(255, 255, 255, 0.2),
+      2px 2px 5px rgba(255, 255, 255, 0.3),
+      3px 3px 10px rgba(255, 255, 255, 0.4),
+      4px 4px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* User Posts */
+.posts h2 {
+  margin-top: 20px;
+  background: transparent;
+}
+
+.posts {
+  color: white;
+  display: flex;
+}
+.posts {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.UserPosts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-left: 80px;
+  margin-top: 10px;
+  width: 80%;
+  height: 500px;
+  background: transparent;
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+}
+
+.UserPosts .carousel1,
+.UserPosts .carousel2,
+.UserPosts .carousel3 {
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  background: black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  background: black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+}
+.UserPosts img {
+    width: 170px;
+    height: 170px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.UserPosts .stats {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+}
+
+.UserPosts span {
+    background: transparent;
 }
